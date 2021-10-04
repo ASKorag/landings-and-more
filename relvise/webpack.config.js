@@ -13,7 +13,7 @@ module.exports = {
       '@molecules': path.resolve(__dirname, 'src/components/molecules/'),
       '@icons': path.resolve(__dirname, 'src/assets/icons/'),
       '@images': path.resolve(__dirname, 'src/assets/images'),
-      '@styles': path.resolve(__dirname, 'src/assets/styles'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
       '@fonts': path.resolve(__dirname, 'src/assets/fonts'),
     },
   },
