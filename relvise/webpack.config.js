@@ -9,8 +9,9 @@ module.exports = {
   entry: './landing.ts',
   resolve: {
     alias: {
-      '@sections': path.resolve(__dirname, 'src/components/sections/'),
+      '@atoms': path.resolve(__dirname, 'src/components/atoms/'),
       '@molecules': path.resolve(__dirname, 'src/components/molecules/'),
+      '@sections': path.resolve(__dirname, 'src/components/sections/'),
       '@icons': path.resolve(__dirname, 'src/assets/icons/'),
       '@images': path.resolve(__dirname, 'src/assets/images'),
       '@styles': path.resolve(__dirname, 'src/styles'),

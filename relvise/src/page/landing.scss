@@ -1,6 +1,7 @@
+@use '~@styles/constants/size.scss';
+
 @import '~normalize.css';
 @import '~@styles/fonts';
+@import '~@styles/default.scss';
 
-body {
-  background-color: antiquewhite;
-}
+@import '~@sections/header/header.scss';

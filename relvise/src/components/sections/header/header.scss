@@ -1,0 +1,24 @@
+@use '~@molecules/nav-panel/nav-panel.scss';
+@use '~@atoms/button/button.scss';
+
+.header {
+  min-height: 800px;
+  width: 100%;
+  background-image: url('~@images/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__bar {
+    display: flex;
+    min-height: 104px;
+    max-width: 500px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+  }
+}

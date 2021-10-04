@@ -1,0 +1,6 @@
+mixin nav-panel(items)
+  nav.nav-panel
+    ul.nav-panel__list.list
+      each item in items
+        li.nav-panel__item.list__item
+          a(href=item.url).nav-panel__link.list__link.link #{item.text}

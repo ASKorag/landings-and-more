@@ -1,0 +1,40 @@
+@use '~@styles/constants/colors.scss' as c;
+
+.btn {
+  $color: none;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  width: 160px;
+  height: 48px;
+  padding: 0;
+  font-weight: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--big {
+    width: 185px;
+  }
+
+  &--main {
+    border-color: c.$MAIN_ACCENT_COLOR;
+    color: c.$MAIN_ACCENT_COLOR;
+  }
+
+  &--sec {
+    border-color: c.$SEC_ACCENT_COLOR;
+    $color: c.$SEC_ACCENT_COLOR;
+  }
+
+  &--round {
+    border-radius: 37px;
+  }
+
+  &--fill {
+    background-color: $color;
+    color: c.$MAIN_LIGHT_COLOR;
+  }
+}

@@ -1,0 +1,7 @@
+mixin button(text, mods)
+  - var {isFill, isBig, shape, color} = mods
+  - fillClass = isFill ? 'btn--fill' : ''
+  - shapeClass = shape === 'rect' ? '' : `btn--${shape}`
+  - sizeClass = isBig ? 'btn--big' : ''
+  - colorClass = 'btn--' + color
+  button(class=[attributes.class, 'btn', fillClass, shapeClass, sizeClass, colorClass]) #{text}

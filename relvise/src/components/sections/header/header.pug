@@ -1,0 +1,24 @@
+include ../../atoms/button/button
+include ../../molecules/nav-panel/nav-panel
+
+-
+  let navItems = [
+    {text: 'Home', url: '#'},
+    {text: 'Product', url: '/product'},
+    {text: 'Pricing', url: '/price'},
+    {text: 'Contact', url: '/contact'}
+  ]
+
+header.header.section
+  .header__wrap.content
+    .header__bar
+      h1.header__logo.title Relvise
+      +nav-panel(navItems)
+    .header__motto
+      h2.header__title Finance and Consultancy Solution
+      p.header__descr
+        |We know how large objects will act,
+        | but things on a small scale.
+      .header__btns
+        +button('Get Quote Now', {isFill: true, isBig: true, shape: 'round', color: 'sec'}).header__btn
+        +button('Learn More', {shape: 'round', color: 'main'}).header__btn
