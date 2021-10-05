@@ -1,0 +1,24 @@
+@use '~@styles/constants/colors.scss' as c;
+@use '~@styles/constants/times.scss' as t;
+
+@use '~@organisms/card/card.scss';
+
+.services {
+  height: 240px;
+  position: absolute;
+  top: 680px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    transition: background-color t.$TRANS, color t.$TRANS;
+    &:hover {
+      cursor: pointer;
+      background-color: c.$MAIN_ACCENT_COLOR;
+      color: c.$MAIN_LIGHT_COLOR;
+    }
+  }
+}

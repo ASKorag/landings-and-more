@@ -1,4 +1,5 @@
 @use '~@styles/constants/colors.scss' as c;
+@use '~@styles/constants/times.scss' as t;
 
 .btn {
   $color: none;
@@ -9,6 +10,7 @@
   width: 160px;
   height: 48px;
   font-weight: inherit;
+  transition: border-color t.$TRANS, color t.$TRANS, background-color t.$TRANS;
 
   &:hover {
     cursor: pointer;
@@ -21,6 +23,12 @@
   &--main {
     border-color: c.$MAIN_ACCENT_COLOR;
     color: c.$MAIN_ACCENT_COLOR;
+
+    &:hover {
+      border-color: c.$SEC_ACCENT_COLOR;
+      background-color: c.$SEC_ACCENT_COLOR;
+      color: c.$MAIN_LIGHT_COLOR;
+    }
   }
 
   &--sec {

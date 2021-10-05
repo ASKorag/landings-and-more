@@ -3,7 +3,7 @@ include ../../molecules/nav-panel/nav-panel
 include ../../molecules/ext-title/ext-title
 
 -
-  let navItems = [
+  var navItems = [
     {text: 'Home', url: '#'},
     {text: 'Product', url: '/product'},
     {text: 'Pricing', url: '/price'},
@@ -20,5 +20,5 @@ header.header.section
       subtitle: 'We know how large objects will act, but things on a small scale.'
     }).header__motto
     .header__btns
-      +button('Get Quote Now', {isFill: true, isBig: true, shape: 'round', color: 'sec'}).header__btn
+      +button('Get Quote Now', { isBig: true, shape: 'round', color: 'main'}).header__btn
       +button('Learn More', {shape: 'round', color: 'main'}).header__btn

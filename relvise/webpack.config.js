@@ -11,6 +11,7 @@ module.exports = {
     alias: {
       '@atoms': path.resolve(__dirname, 'src/components/atoms/'),
       '@molecules': path.resolve(__dirname, 'src/components/molecules/'),
+      '@organisms': path.resolve(__dirname, 'src/components/organisms/'),
       '@sections': path.resolve(__dirname, 'src/components/sections/'),
       '@icons': path.resolve(__dirname, 'src/assets/icons/'),
       '@images': path.resolve(__dirname, 'src/assets/images'),

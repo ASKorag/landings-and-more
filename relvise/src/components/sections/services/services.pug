@@ -1,0 +1,22 @@
+include ../../organisms/card/card
+
+-
+  var servicesItems = [
+    {
+      title: 'Environmental Consulting',
+      subtitle: 'We focus on ergonomics and meeting you where you work.'
+    },
+    {
+      title: 'Finance and consultancy',
+      subtitle: `Just type what\'s on your mind and we\'ll get you there`
+    },
+    {
+      title: 'Financial Services Consulting',
+      subtitle: 'the quick fox jumps over the lazy dog'
+    },
+  ]
+
+section.services.section
+  .services__wrap.content
+    each item in servicesItems
+      +card('service', item).services__card
