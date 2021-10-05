@@ -1,0 +1,38 @@
+@use '~@styles/constants/colors.scss' as c;
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: c.$MAIN_LIGHT_COLOR;
+
+  &--service {
+    width: 330px;
+    height: 240px;
+  }
+
+  &--index {
+    width: 240px;
+    height: 210px;
+  }
+
+  &--advice {
+    width: 230px;
+    height: 340px;
+  }
+
+  &--contact {
+    width: 325px;
+    height: 335px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--index, &--contact {
+      align-items: center;
+    }
+  }
+}
