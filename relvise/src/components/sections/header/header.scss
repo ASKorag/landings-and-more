@@ -1,12 +1,11 @@
-@use '~@molecules/nav-panel/nav-panel.scss';
 @use '~@atoms/button/button.scss';
+@use '~@molecules/nav-panel/nav-panel.scss';
+@use '~@molecules/ext-title/ext-title.scss';
 
 .header {
   min-height: 800px;
-  width: 100%;
   background-image: url('~@images/header-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
 
   &__bar {
     display: flex;
@@ -21,4 +20,27 @@
     line-height: 32px;
     letter-spacing: 0.1px;
   }
+
+  &__motto {
+    margin-top: 80px;
+    width: 400px;
+    height: 340px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &__btns {
+    width: 350px;
+    margin-top: 35px;
+  }
+
 }

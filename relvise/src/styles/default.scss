@@ -13,14 +13,14 @@ body {
 }
 
 .page {
-  width: s.$PAGE_WIDTH;
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .section {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .content {

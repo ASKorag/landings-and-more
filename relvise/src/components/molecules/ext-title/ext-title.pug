@@ -1,0 +1,5 @@
+mixin ext-title(parent, texts)
+  - var {title, subtitle} = texts
+  div(class=[attributes.class, 'ext-title'])
+    h2(class=[parent + '__title', 'ext-title__title']).title #{title}
+    h3(class=[parent + '__subtitle', 'ext-title__subtitle']).title #{subtitle}
