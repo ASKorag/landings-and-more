@@ -1,1 +1,10 @@
+@use '~@scss-utils/fonts.scss';
 @import '~normalize.css';
+
+
+body {
+  font-family: Forum, serif;
+  font-weight: 400;
+  font-size: 30px;
+
+}
