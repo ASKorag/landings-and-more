@@ -1,0 +1,7 @@
+mixin logo(place)
+  div(class=[attributes.class, 'logo'])
+    include ../../../assets/icons/louvre.svg
+    if place === 'header'
+      h1.logo__text Louvre
+    else
+      a(href='#welcome').logo__text._link Louvre

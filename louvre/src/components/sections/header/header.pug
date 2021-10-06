@@ -1,4 +1,5 @@
 include ../../molecules/nav-panel/nav-panel
+include ../../atoms/logo/logo
 
 -
   var navPanelItems = [
@@ -12,4 +13,5 @@ include ../../molecules/nav-panel/nav-panel
 
 header.header._section
   .header__container._container
+    +logo('header').header__logo
     +nav-panel(navPanelItems).header__nav-panel

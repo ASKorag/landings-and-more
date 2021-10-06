@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    margin-left: 25px;
+    font-family: Forum, serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: calc(31 / 28);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}

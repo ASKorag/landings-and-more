@@ -7,6 +7,8 @@
 
 @use '~@molecules/nav-panel/nav-panel.scss';
 
+@use '~@atoms/logo/logo.scss';
+
 @import '~normalize.css';
 
 html {
@@ -19,4 +21,8 @@ body {
   font-size: 22px;
   line-height: calc(26 / 22);
   color: colors.$MAIN_LIGHT_COLOR;
+}
+
+h1,h2,h3 {
+  margin: 0;
 }
