@@ -1,0 +1,15 @@
+include ../../molecules/nav-panel/nav-panel
+
+-
+  var navPanelItems = [
+    {text: 'Visiting', link: '#visiting'},
+    {text: 'Explore', link: '#explore'},
+    {text: 'Video', link: '#journey'},
+    {text: 'Gallery', link: '#gallery'},
+    {text: 'Tickets', link: '#tickets'},
+    {text: 'Contacts', link: '#contacts'},
+  ]
+
+header.header._section
+  .header__container._container
+    +nav-panel(navPanelItems).header__nav-panel

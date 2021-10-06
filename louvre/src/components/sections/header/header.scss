@@ -1,0 +1,12 @@
+@use '~@scss-vars/colors.scss';
+
+.header {
+  min-height: 140px;
+  background-color: colors.$MAIN_DARK_COLOR;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

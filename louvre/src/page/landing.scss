@@ -1,11 +1,22 @@
 @use '~@scss-utils/fonts.scss';
+@use '~@scss-utils/helpers.scss';
 @use '~@scss-vars/colors.scss';
+@use '~@scss-vars/time.scss';
+
+@use '~@sections/header/header.scss';
+
+@use '~@molecules/nav-panel/nav-panel.scss';
+
 @import '~normalize.css';
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: Forum, serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  color: colors.$SEC_ACCENT_COLOR;
+  font-size: 22px;
+  line-height: calc(26 / 22);
+  color: colors.$MAIN_LIGHT_COLOR;
 }

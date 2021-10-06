@@ -7,4 +7,19 @@
 
 ._container {
   min-width: size.$CONTAINER_WIDTH;
+  box-sizing: content-box;
+  padding: 0 size.$DEF_PADDING;
+}
+
+._link {
+  color: inherit;
+  text-decoration: none;
+}
+
+._list {
+  padding: 0;
+
+  &__item {
+    list-style-type: none;
+  }
 }

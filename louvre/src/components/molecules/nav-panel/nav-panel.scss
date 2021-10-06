@@ -1,0 +1,30 @@
+@use '~@scss-vars/time.scss';
+@use '~@scss-vars/colors.scss';
+
+.nav-panel {
+  font-weight: 200;
+  letter-spacing: 2px;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 55px;
+  }
+
+  &__link {
+    transition: color time.$TRANS_TIME ease-in-out;
+
+    &:hover {
+      color: colors.$SEC_ACCENT_COLOR;
+    }
+
+    &:active {
+      color: colors.$THIRD_ACCENT_COLOR;
+    }
+
+  //  padding: 5px;
+  //  box-sizing: content-box;
+  }
+}

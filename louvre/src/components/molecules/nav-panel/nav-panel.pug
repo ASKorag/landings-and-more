@@ -1,0 +1,7 @@
+mixin nav-panel(items)
+  nav(class=[attributes.class, 'nav-panel'])
+    ul.nav-panel__list._list
+      each item in items
+        - var {text, link} = item
+        li.nav-panel__item._list__item
+          a(href=link).nav-panel__link._link #{text}
