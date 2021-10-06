@@ -1,0 +1,41 @@
+include ../../atoms/logo/logo
+include ../../molecules/nav-panel/nav-panel
+
+-
+  var navPanelItems = [
+    {text: 'Visiting', link: '#visiting'},
+    {text: 'Gallery', link: '#gallery'},
+    {text: 'Explore', link: '#explore'},
+    {text: 'Tickets', link: '#tickets'},
+    {text: 'Video', link: '#journey'},
+    {text: 'Contacts', link: '#contacts'},
+  ]
+
+-
+  var socialItems = [
+    {icon: 'youtube', link: 'https://www.youtube.com/user/louvre'},
+    {icon: 'instagram', link: 'https://www.instagram.com/museelouvre/'},
+    {icon: 'facebook', link: 'https://www.facebook.com/museedulouvre'},
+    {icon: 'twitter', link: 'https://twitter.com/museelouvre'},
+    {icon: 'pinterest', link: 'https://www.pinterest.fr/museedulouvre/'}
+  ]
+
+footer.footer._section
+  .footer__container._container
+    +logo().footer__logo
+    +nav-panel(navPanelItems).footer__nav-panel
+    ul.footer__soc._list
+      each item in socialItems
+        - var {icon, link} = item
+        li.footer__soc-item._list__item
+          a(href=link).footer__soc-link._link
+            if icon === 'youtube'
+              include ../../../assets/icons/social/youtube.svg
+            else if icon === 'instagram'
+              include ../../../assets/icons/social/instagram.svg
+            else if icon === 'facebook'
+              include ../../../assets/icons/social/facebook.svg
+            else if icon === 'twitter'
+              include ../../../assets/icons/social/twitter.svg
+            else if icon === 'pinterest'
+              include ../../../assets/icons/social/pinterest.svg
