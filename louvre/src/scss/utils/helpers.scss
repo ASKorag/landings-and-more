@@ -1,0 +1,10 @@
+@use '~@scss-vars/size.scss';
+
+._section {
+  display: flex;
+  justify-content: center;
+}
+
+._container {
+  min-width: size.$CONTAINER_WIDTH;
+}
