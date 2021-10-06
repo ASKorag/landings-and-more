@@ -19,6 +19,7 @@ module.exports = {
       '@fonts': path.resolve(__dirname, 'src/assets/fonts'),
 
       '@scss-utils': path.resolve(__dirname, 'src/scss/utils'),
+      '@scss-vars': path.resolve(__dirname, 'src/scss/variables'),
     },
   },
   output: {
