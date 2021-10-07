@@ -1,7 +1,9 @@
 mixin logo(place)
   div(class=[attributes.class, 'logo'])
-    include ../../../assets/icons/louvre.svg
     if place === 'header'
+      include ../../../assets/icons/louvre.svg
       h1.logo__text Louvre
     else
-      a(href='#welcome').logo__text._link Louvre
+      a(href='#welcome').logo__link._link
+        include ../../../assets/icons/louvre.svg
+        span.logo__text Louvre
