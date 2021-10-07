@@ -1,0 +1,60 @@
+@use '~@scss-vars/colors.scss';
+@use '~@scss-vars/time.scss';
+
+.slider-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 600px;
+  min-height: 120px;
+  background-color: colors.$MAIN_DARK_COLOR;
+  line-height: calc(40 / 22);
+
+  &__container {
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__separator {
+    margin: 0 10px;
+  }
+
+  &__carousel {
+    display: flex;
+  }
+
+  &__slide {
+    width: 16px;
+    height: 16px;
+    background-color: colors.$MAIN_LIGHT_COLOR;
+    transition: background-color time.$TRANS_TIME ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: colors.$THIRD_ACCENT_COLOR;
+    }
+
+    &--current {
+      background-color: colors.$SEC_ACCENT_COLOR;
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  &__arrow {
+    transition: color time.$TRANS_TIME ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: colors.$THIRD_ACCENT_COLOR;
+    }
+
+    &--left {
+      margin-right: 20px;
+    }
+  }
+}

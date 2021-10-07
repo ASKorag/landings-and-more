@@ -4,7 +4,10 @@
 @use '~@scss-vars/time.scss';
 
 @use '~@sections/header/header.scss';
+@use '~@sections/welcome/welcome.scss';
 @use '~@sections/footer/footer.scss';
+
+@use '~@organisms/slider-panel/slider-panel.scss';
 
 @use '~@molecules/nav-panel/nav-panel.scss';
 
@@ -18,6 +21,7 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: calc(26 / 22);

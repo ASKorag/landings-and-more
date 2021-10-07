@@ -1,0 +1,34 @@
+@use '~@scss-vars/colors.scss';
+
+.welcome {
+  min-height: 810px;
+  background-color: colors.$MAIN_DARK_COLOR;
+
+  &__container {
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__slider {
+    position: relative;
+    width: 1000px;
+    height: 750px;
+  }
+
+  &__slider-panel {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__img-wrap {
+    width: 1000px;
+    height: 750px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

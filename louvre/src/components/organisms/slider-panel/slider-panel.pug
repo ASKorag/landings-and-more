@@ -1,0 +1,13 @@
+mixin slider-panel()
+  div(class=[attributes.class, 'slider-panel'])
+    .slider-panel__container
+      .slider-panel__slides
+        span.slider-panel__slide-number 01
+        span.slider-panel__separator |
+        span.slider-panel__slides-count 05
+      .slider-panel__carousel
+        each num in [1, 2, 3, 4, 5]
+          div(class=['slider-panel__slide', num === 1 ? 'slider-panel__slide--current' : ''])
+      .slider-panel__arrows
+        span.slider-panel__arrow.slider-panel__arrow--left ←
+        span.slider-panel__arrow.slider-panel__arrow--right →

@@ -1,0 +1,8 @@
+include ../../organisms/slider-panel/slider-panel
+
+section(id='welcome').welcome._section
+  .welcome__container._container
+    .welcome__slider
+      .welcome__img-wrap
+        img(src=require('@images/mona-lisa.jpg') alt='Mona Lisa').welcome__img
+      +slider-panel().welcome__slider-panel
